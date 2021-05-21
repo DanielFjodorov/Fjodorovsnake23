@@ -20,7 +20,7 @@ namespace Fjodorovsnake23
             numList.Add(0);
             numList.Add(1);
             numList.Add(2);
-            .ю
+            .ю.
             int x = numList[0];
             int y = numList[1];
             int z = numList[2];
