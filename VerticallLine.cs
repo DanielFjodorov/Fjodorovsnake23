@@ -6,29 +6,32 @@ using System.Threading.Tasks;
 
 namespace Fjodorovsnake23
 {
-    class HorizonLine
+    class VerticallLine
     {
         List<Class_Point> pList;
 
-        public HorizonLine(int xLeft, int xReight, int y, char sym)
+        public VerticallLine( int yUp, int yDown, int x, char sym )
         {
             pList = new List<Class_Point>();
-            for(int x =xLeft; x <= xReight; x++)
+            for(int y = yUp; y <= yDown; y++)
             {
                 Class_Point p = new Class_Point(x, y, sym);
                 pList.Add(p);
             }
 
         }
-  
+
         public void Draw()
         {
-            foreach(Class_Point p in pList)
+            foreach (Class_Point p in pList)
             {
                 p.Draw();
             }
 
         }
-    }
-}
 
+            
+        }
+    }
+
+        

@@ -10,15 +10,24 @@ namespace Fjodorovsnake23
     {
         static void Main(string[] args)
         {
-            Class_Point p1 = new Class_Point(1, 3, '*');
-            p1.Draw(); //Создаем метод Draw//
+            Console.SetWindowSize(80, 16);
+            Console.SetBufferSize( 80, 16 );
 
-            Class_Point p2 = new Class_Point(4, 5, '#');
-            p2.Draw();
+            //Отрисовка рамок
+            HorizonLine upLine = new HorizonLine(0, 78, 0, '+');
+            HorizonLine downLine = new HorizonLine(0, 78, 24, '+');
+            VerticallLine leftLine = new VerticallLine(0, 24, 0, '+');
+            VerticallLine rightLine = new VerticallLine(0, 24, 78, '+');
+            upLine.Draw();
+            downLine.Draw();
+            leftLine.Draw();
+            rightLine.Draw();
 
-            HorizonLine line = new HorizonLine(5, 10, 8, '+');
-            line.Drow();
+            //Отрисовка точек 
+            Class_Point p = new Class_Point(4, 5, '*');
+            p.Draw();
 
+            
             Console.ReadLine();
           }        
         }
