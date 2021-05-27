@@ -11,36 +11,36 @@ namespace Fjodorovsnake23
            public void game_draw()
           {
 
-Console.Clear();
-Console.Title="Snake";
-Console.SetWindowSize(101, 26);
+            Console.Clear();
+            Console.Title="Snake";
+            Console.SetWindowSize(101, 26);
 
-Walls walls = new Walls(101, 26);
-        walls.Draw();
+            Walls walls = new Walls(101, 26);
+            walls.Draw();
 
-Params settings = new Params();
-        //Sounds sound = new Sounds(settings.GetResourceFolder());
-        //sound.Play("stardust.mp3");
+            Params settings = new Params();
+            //Sounds sound = new Sounds(settings.GetResourceFolder());
+            //sound.Play("stardust.mp3");
 
-        // Отрисовка точек
-        Point p = new Point(4, 5, '*');
-        Snake snake = new Snake(p, 4, Direction.RIGHT);
-        snake.Draw();
+            // Отрисовка точек
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
-FoodCreator foodCreator = new FoodCreator(101, 26, '$', ConsoleColor.Green);
-        Point food = foodCreator.CreateFood();
-        food.Draw();
+            FoodCreator foodCreator = new FoodCreator(101, 26, '$', ConsoleColor.Green);
+            Point food = foodCreator.CreateFood();
+            food.Draw();
 
-Score score = new Score(0, 1);// score =0, level=1
-        score.speed = 400;
-score.ScoreWrite();
+            Score score = new Score(0, 1);// score =0, level=1
+            score.speed = 400;
+            score.ScoreWrite();
 
-while (true)
-{
-if (walls.IsHit(snake) || snake.IsHitTail())
-{
-break;
-}
+        while (true)
+    {
+        if (walls.IsHit(snake) || snake.IsHitTail())
+    {
+        break;
+    }
                 if (snake.Eat(food))
                 {
                     score.ScoreUp();
