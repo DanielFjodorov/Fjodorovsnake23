@@ -13,22 +13,17 @@ namespace Fjodorovsnake23
         public HorizonLine(int xLeft, int xReight, int y, char sym)
         {
             pList = new List<Class_Point>();
-            for(int x =xLeft; x <= xReight; x++)
+            for (int x = xLeft; x <= xReight; x++)
             {
                 Class_Point p = new Class_Point(x, y, sym);
                 pList.Add(p);
             }
 
         }
-  
-        public void Draw()
-        {
-            foreach(Class_Point p in pList)
-            {
-                p.Draw();
+                  }
+                
             }
 
-        }
-    }
-}
+        
+    
 
