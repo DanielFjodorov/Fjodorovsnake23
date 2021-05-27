@@ -20,7 +20,7 @@ namespace Fjodorovsnake23
             numList.Add(0);
             numList.Add(1);
             numList.Add(2);
-            .ю..ю
+            
             int x = numList[0];
             int y = numList[1];
             int z = numList[2];
@@ -29,6 +29,12 @@ namespace Fjodorovsnake23
             {
                 Console.WriteLine(i);
             }
+
+            numList.RemoveAt(0);
+
+            List<Class_Point> pList = new List<Class_Point>();
+            pList.Add( p1 );
+            pList.Add(p2);
 
             Console.ReadLine();
           }        
