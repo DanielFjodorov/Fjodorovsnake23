@@ -46,6 +46,7 @@
     <Compile Include="Class Point.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Figure.cs" />
+    <Compile Include="FoodCreator.cs" />
     <Compile Include="HorizonLine.cs" />
     <Compile Include="Params.cs" />
     <Compile Include="Point.cs" />
