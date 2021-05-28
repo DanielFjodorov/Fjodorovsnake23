@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fjodorovsnake23
 {
-    class HorizonLine
+    class HorizonLine : Figure
     {
         List<Class_Point> pList;
 

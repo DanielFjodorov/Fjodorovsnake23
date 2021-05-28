@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fjodorovsnake23
 {
-    class Program
+    class Program 
     {
            public void game_draw()
           {
