@@ -64,6 +64,7 @@ namespace Fjodorovsnake23
         }
 
         internal bool Eat(Point food)
+            
         {
             Point head = GetNextPoint();
             if (head.IsHit(food))
@@ -74,6 +75,7 @@ namespace Fjodorovsnake23
             }
             else
                 return false;
+            Console.Beep();
         }
     }
 }

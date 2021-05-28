@@ -9,7 +9,7 @@ namespace Fjodorovsnake23
 {
     class Params
     {
-        private string resourcesFolder;
+        private string resourcesFoler;
 
         public Params()
         {
@@ -21,12 +21,12 @@ namespace Fjodorovsnake23
                 Directory.GetCurrentDirectory().ToString().Substring(0, ind)
                      .ToString();
 
-            resourcesFolder = binFolder + "resources?\\";
+            resourcesFoler = binFolder + "resources?\\";
 
         }
         public string GetResourceFolder()
         {
-            return resourcesFolder;
+            return resourcesFoler;
         }
     }
 }
