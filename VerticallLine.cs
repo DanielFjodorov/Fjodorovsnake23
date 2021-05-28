@@ -8,30 +8,24 @@ namespace Fjodorovsnake23
 {
     class VerticallLine : Figure
     {
-        List<Class_Point> pList;
 
         public VerticallLine( int yUp, int yDown, int x, char sym )
         {
-            pList = new List<Class_Point>();
+            pList = new List<Point>();
             for(int y = yUp; y <= yDown; y++)
             {
-                Class_Point p = new Class_Point(x, y, sym);
+                Point p = new Point(x, y, sym);
                 pList.Add(p);
             }
 
         }
 
-        public void Draw()
-        {
-            foreach (Class_Point p in pList)
-            {
-                p.Draw();
+        
+            
+                
             }
 
         }
-
-            
-        }
-    }
+    
 
         

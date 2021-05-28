@@ -8,14 +8,13 @@ namespace Fjodorovsnake23
 {
     class HorizonLine : Figure
     {
-        List<Class_Point> pList;
 
         public HorizonLine(int xLeft, int xReight, int y, char sym)
         {
-            pList = new List<Class_Point>();
+            pList = new List<Point>();
             for (int x = xLeft; x <= xReight; x++)
             {
-                Class_Point p = new Class_Point(x, y, sym);
+                Point p = new Point(x, y, sym);
                 pList.Add(p);
             }
 

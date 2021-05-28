@@ -21,11 +21,11 @@ namespace Fjodorovsnake23
             this.mapHeight = mapHeight;
             this.sym = sym;
         }
-        public Class_Point CreateFood()
+        public Point CreateFood()
         {
             int x = random.Next(2, mapWidth - 2);
             int y = random.Next(2, mapHeight - 2);
-            return new Class_Point(x, y, sym);
+            return new Point(x, y, sym);
 
         }
     }

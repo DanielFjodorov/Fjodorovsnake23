@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Fjodorovsnake23
@@ -17,17 +18,12 @@ namespace Fjodorovsnake23
 
             Walls walls = new Walls(101, 26);
             walls.Draw();
-
-            Params settings = new Params();
-            //Sounds sound = new Sounds(settings.GetResourceFolder());
-            //sound.Play("stardust.mp3");
-
             // Отрисовка точек
             Point p = new Point(4, 5, '*');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Draw();
 
-            FoodCreator foodCreator = new FoodCreator(101, 26, '$', ConsoleColor.Green);
+            FoodCreator foodCreator = new FoodCreator(101, 26, '$');
             Point food = foodCreator.CreateFood();
             food.Draw();
 
@@ -56,7 +52,7 @@ namespace Fjodorovsnake23
                 {
                     snake.Move();
                 }
-                Thread.Sleep(score.speed);
+                Thread.Sleep(100);
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey(true);
