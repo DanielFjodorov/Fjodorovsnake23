@@ -15,6 +15,7 @@ namespace Fjodorovsnake23
             Console.Clear();
             Console.Title="Snake";
             Console.SetWindowSize(101, 26);
+            Console.Beep();
 
             Walls walls = new Walls(101, 26);
             walls.Draw();
@@ -86,9 +87,8 @@ namespace Fjodorovsnake23
             int yOffset = 8;
             Console.ForegroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(xOffset, yOffset++);
-            WriteText("====================", xOffset, yOffset++);
-            WriteText("G A M E    O V E R", xOffset + 1, yOffset++);
-            WriteText("====================", xOffset, yOffset++);
+            WriteText("============================", xOffset, yOffset++);
+            WriteText("The  End", xOffset + 1, yOffset++);
         }
 
         static void WriteText(String text, int xOffset, int yOffset)
