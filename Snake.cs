@@ -75,7 +75,7 @@ namespace Fjodorovsnake23
             }
             else
                 return false;
-            Console.Beep();
+            
         }
     }
 }

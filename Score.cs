@@ -32,6 +32,7 @@ namespace Fjodorovsnake23
             Console.WriteLine("Score:" + score.ToString());
             Console.SetCursorPosition(90, 11);
             Console.WriteLine("Level:" + level.ToString());
+            Console.Beep();
         }
     }
 }
