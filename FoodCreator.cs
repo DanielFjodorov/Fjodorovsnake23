@@ -8,11 +8,12 @@ namespace Fjodorovsnake23
 {
     class FoodCreator
     {
+       
         int mapWidth;
         int mapHeight;
         char sym;
 
-
+        
         Random random = new Random();
         
         
